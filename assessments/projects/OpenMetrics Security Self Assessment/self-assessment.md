@@ -1,4 +1,4 @@
-# Self-assessment
+# OpenMetrics Security Self Assessment 
 The Self-assessment is the initial document for projects to begin thinking about the
 security of the project, determining gaps in their security, and preparing any security
 documentation for their users. This document is ideal for projects currently in the
