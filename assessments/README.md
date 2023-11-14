@@ -6,7 +6,7 @@ The [TAG-Security Security Assessment Process](guide) (formerly the security
 review process) is designed to accelerate the adoption of cloud native 
 technologies, based on the below goals and assumptions.
 
-### 1) Reduce risk across the ecosystem
+### 1) Reduce risk across the ecosystem  
 
 The primary goal is to reduce the risk from malicious attacks and accidental
 breaches of privacy. This process supports that goal in two ways:
