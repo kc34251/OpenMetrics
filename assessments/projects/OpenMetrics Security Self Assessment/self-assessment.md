@@ -46,8 +46,8 @@ Provide the list of links to existing security documentation for the project. Yo
 use the table below as an example:
 | Doc | url |
 | -- | -- |
-| Security file | https://my.security.file |
-| Default and optional configs | https://example.org/config |
+| Security file | https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md |
+| Default and optional configs | https://github.com/OpenObservability/OpenMetrics/blob/main/.editorconfig |
 
 ## Overview
 
