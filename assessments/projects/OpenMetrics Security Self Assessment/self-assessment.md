@@ -51,14 +51,11 @@ use the table below as an example:
 
 ## Overview
 
-One or two sentences describing the project -- something memorable and accurate
-that distinguishes your project to quickly orient readers who may be assessing
-multiple projects.
+OpenMetrics is a specification built upon and carefully extending Prometheus exposition format in almost 100% backwards compatible ways. 
 
 ### Background
 
-Provide information for reviewers who may not be familiar with your project's
-domain or problem area.
+Prometheus is an open source software that provides monitoring and alerting functionality for cloud-native environments, including Kubernetes. It can collect and store metrics as time-series data, recording information with a timestamp. Metrics can be exposed to Prometheus using a simple text-based exposition format. OpenMetrics is the an effort to standardize metric wire formatting built off of Prometheus text format.
 
 ### Actors
 These are the individual parts of your system that interact to provide the 
