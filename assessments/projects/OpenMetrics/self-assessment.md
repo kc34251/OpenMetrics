@@ -83,8 +83,7 @@ Security Considerations are not included in the Open Matrics and need to be impl
 ## Self-assessment use
 
 In this project, users will be able to be exporter or uploaders to access or upload the information and libraries into the cloud-native resources. This project is based on the Prometheus and will use the ABNF requirements. If any of the requirements on Open Metrics conflict with the ABNF requirements, users should take the ABNF requirements as first priority. 
-
-	To find detailed requirements for users under the Open Metrics, please refer to https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md. In this documentation, users will be able to check all the rules and requirements. Moreover, Default port allocations have a requirement for users as well, users can refer to https://github.com/prometheus/prometheus/wiki/Default-port-allocations  for detailed instructions on each default port allocation instruction.
+To find detailed requirements for users under the Open Metrics, please refer to https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md. In this documentation, users will be able to check all the rules and requirements. Moreover, Default port allocations have a requirement for users as well, users can refer to https://github.com/prometheus/prometheus/wiki/Default-port-allocations  for detailed instructions on each default port allocation instruction.
 
 
 ## Security functions and features
