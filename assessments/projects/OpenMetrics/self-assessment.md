@@ -111,7 +111,9 @@ To find detailed requirements for users under the Open Metrics, please refer to 
 
 Attack Options:
 Password theft by phishing
+
 Password crashing by brute force
+
 IP spoofing
 	
 Mitigation:
