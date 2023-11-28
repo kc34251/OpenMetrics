@@ -104,19 +104,19 @@ In this project, Users can access the cloud-native resource by downloading as ex
 
 To find detailed requirements for users under the Open Metrics, please refer to https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md. In this documentation, users will be able to check all the rules and requirements. Moreover, Default port allocations have a requirement for users as well, users can refer to https://github.com/prometheus/prometheus/wiki/Default-port-allocations  for detailed instructions on each default port allocation instruction.
 
-STRIDE Threat Modeling for OpenMetrics:
+### STRIDE Threat Modeling for OpenMetrics:
 
-Spoofing
-An external entity may try to gain access to data metrics by spoofing or stealing credentials/IP and as a result, access is given to the wrong user.
+#### Spoofing
+* An external entity may try to gain access to data metrics by spoofing or stealing credentials/IP and as a result, access is given to the wrong user.
 
 Attack Options:
 Password theft by phishing
 Password crashing by brute force
 IP spoofing
 	
-	Mitigation:
-Utilizing API tokens, client certificates, or other secure authentication methods.
-Implementing secure authentication mechanisms for metric producers and consumers (exporters and ingesters).
+* Mitigation:
+* Utilizing API tokens, client certificates, or other secure authentication methods.
+* Implementing secure authentication mechanisms for metric producers and consumers (exporters and ingesters).
 
 Tampering
 Data flowing from endpoints can be tampered with in transit which can lead to corruption of metrics.
