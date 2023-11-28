@@ -102,9 +102,7 @@ For outside OpenMetrics Security, implementors MAY choose to offer authenticatio
 
 All exposer implementations SHOULD be able to secure their HTTP traffic with TLS 1.2 or later. If an exposer implementation does not support encryption, operators SHOULD use reverse proxies, firewalling, and/or ACLs where feasible.
 
-Metric exposition should be independent of production services exposed to end users; as such, having a /metrics endpoint on ports like TCP/80, TCP/443, TCP/8080, and TCP/8443 is generally discouraged for publicly exposed services using OpenMetrics.
-
-For the Security functions within OpenMetrics, OpenMetrics will protect user information with an unknown hash function. All resources other than user information are open resources and allow exporters and uploaders to create cloud-native resources.
+Metric exposition should be independent of production services exposed to end users; as such, having a /metrics endpoint on ports like TCP/80, TCP/443, TCP/8080, and TCP/8443 is generally discouraged for publicly exposed services using OpenMetrics.All resources other than user information are open resources and allow exporters and uploaders to create cloud-native resources.
 
 Critically, this project did well at protecting the information by not publicizing the security management resource they are using for user information and stored information. However, this also creates a lack of security on the other hand, since it is not open to the public, it is hard to frequently update their security protections.
 
