@@ -111,15 +111,7 @@ The OpenMetrics project integrates into the cloud native ecosystem by specifying
 
 ## Security issue resolution
 
-* Responsible Disclosures Process. A outline of the project's responsible
-  disclosures process should suspected security issues, incidents, or
-vulnerabilities be discovered both external and internal to the project. The
-outline should discuss communication methods/strategies.
-  * Vulnerability Response Process. Who is responsible for responding to a
-    report. What is the reporting process? How would you respond?
-* Incident Response. A description of the defined procedures for triage,
-  confirmation, notification of vulnerability or security incident, and
-patching/update availability.
+OpenMetrics has an issue reporting in place in their GitHub repository at https://github.com/OpenObservability/OpenMetrics/issues, which can be used to report security issues, incidents, or vulnerabilities pertaining to both external and internal to the project. OpenMetrics also has a mailing list at https://groups.google.com/g/openmetrics where discussions regarding new updates, other project discussions, and developments are done regarding the project. Vulnerabilities and other issues can be reported in the project’s GitHub repository and they are either being resolved by the project maintainers or the contributors.
 
 ## Appendix
 
