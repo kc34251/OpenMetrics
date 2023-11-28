@@ -106,7 +106,7 @@ To find detailed requirements for users under the Open Metrics, please refer to 
 
 ### STRIDE Threat Modeling for OpenMetrics:
 
-#### Spoofing
+1. Spoofing
 * An external entity may try to gain access to data metrics by spoofing or stealing credentials/IP and as a result, access is given to the wrong user.
 
 Attack Options: Password theft by phishing, Password crashing by brute force, IP spoofing
