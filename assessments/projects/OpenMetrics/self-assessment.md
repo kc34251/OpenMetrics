@@ -82,9 +82,15 @@ Security Considerations are not included in the Open Matrics and need to be impl
 
 ## Self-assessment use
 
-In this project, users will be able to be exporter or uploaders to access or upload the information and libraries into the cloud-native resources. This project is based on the Prometheus and will use the ABNF requirements. If any of the requirements on Open Metrics conflict with the ABNF requirements, users should take the ABNF requirements as first priority. 
-To find detailed requirements for users under the Open Metrics, please refer to https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md. In this documentation, users will be able to check all the rules and requirements. Moreover, Default port allocations have a requirement for users as well, users can refer to https://github.com/prometheus/prometheus/wiki/Default-port-allocations  for detailed instructions on each default port allocation instruction.
+This self-assessment is created by the OpenMetrics team to perform an internal analysis of the project's security. It is not intended to provide a security audit of OpenMetrics, or function as an independent assessment or attestation of OpenMetrics's security health.
 
+This document serves to provide OpenMetrics users with an initial understanding of OpenMetrics's security, where to find existing security documentation, OpenMetrics plans for security, and general overview of OpenMetrics security practices, both for development of OpenMetrics as well as security of OpenMetrics.
+
+This document provides the CNCF TAG-Security with an initial understanding of OpenMetrics to assist in a joint-assessment, necessary for projects under incubation. Taken together, this document and the joint-assessment serve as a cornerstone for if and when OpenMetrics seeks graduation and is preparing for a security audit.
+
+In this project, users will be able to be exporter or uploaders to access or upload the information and libraries into the cloud-native resources. This project is based on the Prometheus and will use the ABNF requirements. If any of the requirements on Open Metrics conflict with the ABNF requirements, users should take the ABNF requirements as first priority. 
+
+To find detailed requirements for users under the Open Metrics, please refer to https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md. In this documentation, users will be able to check all the rules and requirements. Moreover, Default port allocations have a requirement for users as well, users can refer to https://github.com/prometheus/prometheus/wiki/Default-port-allocations for detailed instructions on each default port allocation instruction.
 
 ## Security functions and features
 
@@ -99,7 +105,6 @@ Metric exposition should be independent of production services exposed to end us
 For the Security functions within OpenMetrics, OpenMetrics will protect user information with an unknown hash function. All resources other than user information are open resources and allow exporters and uploaders to create cloud-native resources.
 
 Critically, this project did well at protecting the information by not publicizing the security management resource they are using for user information and stored information. However, this also creates a lack of security on the other hand, since it is not open to the public, it is hard to frequently update their security protections.
-
 
 ## Project compliance
 The OpenMetrics project has not been documented as meeting any security standards, however, the OpenMetrics project advises users to handle encryption and security outside of OpenMetrics and to use reverse proxies, firewalling, and/or ACLs where feasible.
