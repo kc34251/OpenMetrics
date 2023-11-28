@@ -77,9 +77,9 @@ With regards to security, implementors MAY choose to offer authentication, autho
 ### Non-goals
 Security Considerations are not included in the Open Matrics and need to be implemented at the user end. Users could choose to handle the Security problem with help from authentication, authorization, and accounting, however, all these should be handled outside of the Open Metrics. How ingestors discover which exposers exist, and vice-versa, is out of scope and thus not defined in this standard.
 
-	Avoiding misusing of the OpemMatrics from the user end is not a concern in this project as well. Moreover, this project is not designed to negotiate the conflict between the rule included here and the ABNF section. If there is a conflict, the user should check the ABNF sections as first priority and then follow the rest of the additional rules that OpenMatrics designed.
+Avoiding misusing of the OpemMatrics from the user end is not a concern in this project as well. Moreover, this project is not designed to negotiate the conflict between the rule included here and the ABNF section. If there is a conflict, the user should check the ABNF sections as first priority and then follow the rest of the additional rules that OpenMatrics designed.
  
-	The use of Data type is assumed to be understood by the user, and the user has the obligation to follow the usage there. When using data type, players are required to read and follow the instructions on Open Matrics, and when including the Port Allocations, users are required to follow the structure with these rules published by OpenMetric. It is not OpenMetrics’s goal to convert any type of user input into this format.
+The use of Data type is assumed to be understood by the user, and the user has the obligation to follow the usage there. When using data type, players are required to read and follow the instructions on Open Matrics, and when including the Port Allocations, users are required to follow the structure with these rules published by OpenMetric. It is not OpenMetrics’s goal to convert any type of user input into this format.
 
 
 ## Self-assessment use
