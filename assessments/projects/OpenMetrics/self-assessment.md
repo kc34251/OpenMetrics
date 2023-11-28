@@ -115,26 +115,26 @@ Attack Options: Password theft by phishing, Password crashing by brute force, IP
 * Utilizing API tokens, client certificates, or other secure authentication methods.
 * Implementing secure authentication mechanisms for metric producers and consumers (exporters and ingesters).
 
-#### Tampering
+#### 2. Tampering
 * Data flowing from endpoints can be tampered with in transit which can lead to corruption of metrics.
 * Metric definitions can be exposed to unauthorized alteration which could result in misinterpretation or misrepresentation of data.
 
 ##### Mitigation:
 * Use hashes or data signatures for data validation and tamper detection. 
 
-#### Repudiation
+#### 3. Repudiation
 * Attackers may cover up any evidence of unauthorized actions by altering data logs or information logs.
 
 ##### Mitigation:
 * Audit and logging mechanisms to track all system activity and suspicious activity.
 
-#### Information Disclosure
+#### 4. Information Disclosure
 * Improperly handling queries may allow an attacker to gain access to information that is not intended for disclosure. E.g. Querying for one metric returns all metrics which are then filtered on the frontend. This data flowing across the access request and response may be sniffed by an attacker.
 
 ##### Mitigation:
 * Encryption of sensitive data and access control mechanisms to restrict data accessibility.
 
-#### Denial of Service
+#### 5. Denial of Service
 * An external agent can make so many requests for metrics that it can overwhelm the web server and deny normal user access.
 * An attacker can try to overwhelm the data storage by tampering with metric formats to try and store more data than the system can handle. 
 
@@ -142,7 +142,7 @@ Attack Options: Password theft by phishing, Password crashing by brute force, IP
 * Load balancing and traffic filtering systems to mitigate traffic spikes and spread the load evenly.
 * Data tracking mechanisms to track suspicious spikes in data storage.
 
-#### Elevation of Privilege
+#### 6. Elevation of Privilege
 * A user may be able to gain elevated privileges beyond their normal role and modify metrics that they should not have been able to modify
 
 ##### Mitigation:
