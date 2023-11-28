@@ -114,7 +114,7 @@ Password theft by phishing
 Password crashing by brute force
 IP spoofing
 	
-* Mitigation:
+Mitigation:
 * Utilizing API tokens, client certificates, or other secure authentication methods.
 * Implementing secure authentication mechanisms for metric producers and consumers (exporters and ingesters).
 
