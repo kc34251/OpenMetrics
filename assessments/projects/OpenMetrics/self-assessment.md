@@ -123,15 +123,7 @@ patching/update availability.
 
 ## Appendix
 
-* Known Issues Over Time. List or summarize statistics of past vulnerabilities
-  with links. If none have been reported, provide data, if any, about your track
-record in catching issues in code review or automated testing.
-* [CII Best Practices](https://www.coreinfrastructure.org/programs/best-practices-program/).
-  Best Practices. A brief discussion of where the project is at
-  with respect to CII best practices and what it would need to
-  achieve the badge.
-* Case Studies. Provide context for reviewers by detailing 2-3 scenarios of
-  real-world use cases.
-* Related Projects / Vendors. Reflect on times prospective users have asked
-  about the differences between your project and projectX. Reviewers will have
-the same question.
+The list of known issues over time for OpenMetrics can be found at https://github.com/OpenObservability/OpenMetrics/issues?q=is%3Aissue+is%3Aclosed. There had been no specific source of information regarding the vulnerabilities found in OpenMetrics.
+OpenMetrics does not have an OpenSSF best practices badge and its progress is also not being tracked OpenSSF best practices website. It has a stable website but doesn’t clearly state how to obtain and provide feedback, and doesn’t state other information regarding the contribution process. The project haven’t clearly listed a documented roadmap of what the project intends to do and not to do for atleast the next year. Other criteria that are required for OpenMetrics to get an OpenSSF best practices badge are listed here https://github.com/coreinfrastructure/best-practices-badge#silver and OpenMetrics doesn’t seem to follow most of them.
+Specific case studies of using OpenMetrics are not provided online. The goal of OpenMetrics is to standardize the format in which exporters and ingestors handle data. OpenMetrics is primarily supported by Prometheus. The alternatives to Prometheus are Graphite, InfluxDB, OpenTSDB, Nagios and Sensu, these have their own Data Models. So, taking an example, users who use Prometheus need to convert their data in one Data Model format to another to fit the requirements of other softwares, instead OpenMetrics is trying to define a standardized format which will be helpful to interchange monitoring softwares without changing the Data Model.
+Every other cloud-native monitoring system has its own defined Data Model and there is no sufficient information present regarding the standard formats proposed alternative to OpenMetrics.
