@@ -102,28 +102,12 @@ Critically, this project did well at protecting the information by not publicizi
 
 
 ## Project compliance
-
-* Compliance.  List any security standards or sub-sections the project is
-  already documented as meeting (PCI-DSS, COBIT, ISO, GDPR, etc.).
+The OpenMetrics project has not been documented as meeting any security standards, however, the OpenMetrics project advises users to handle encryption and security outside of OpenMetrics and to use reverse proxies, firewalling, and/or ACLs where feasible.
 
 ## Secure development practices
-
-* Development Pipeline.  A description of the testing and assessment processes that
-  the software undergoes as it is developed and built. Be sure to include specific
-information such as if contributors are required to sign commits, if any container
-images immutable and signed, how many reviewers before merging, any automated checks for
-vulnerabilities, etc.
-* Communication Channels. Reference where you document how to reach your team or
-  describe in corresponding section.
-  * Internal. How do team members communicate with each other?
-  * Inbound. How do users or prospective users communicate with the team?
-  * Outbound. How do you communicate with your users? (e.g. flibble-announce@
-    mailing list)
-* Ecosystem. How does your software fit into the cloud native ecosystem?  (e.g.
-  Flibber is integrated with both Flocker and Noodles which covers
-virtualization for 80% of cloud users. So, our small number of "users" actually
-represents very wide usage across the ecosystem since every virtual instance uses
-Flibber encryption by default.)
+In regards to the development pipeline, a description of the testing and assessment proccesses that the software undergoes as it is developed and built is not available on the OpenMetrics GitHub page, however, there is an extensive list of testing scripts that are available on their Github page which shows that the software has been tested in some form. 
+In terms of communication, the project has not documented how team members communicate with each other, but they have available meetings notes on their Github and post updates on their Github to communicate with their users. They have also listed their team members on their Github page which can allow users or prospective users to reach out to the team. 
+The OpenMetrics project integrates into the cloud native ecosystem by specifying today's de-facto standard for transmitting cloud-native metrics at scale, with support for both text representation and Protocol Buffers and brings it into an Internet Engineering Task Force (IETF) standard. Additionally, the OpenMetrics project has been adopted by Everquote, GitLab, Grafana Labs as well as SoundCloud.
 
 ## Security issue resolution
 
