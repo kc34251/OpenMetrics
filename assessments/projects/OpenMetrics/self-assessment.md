@@ -175,7 +175,7 @@ The OpenMetrics project integrates into the cloud native ecosystem by specifying
 
 ## Security issue resolution
 
-OpenMetrics has an issue reporting in place in their GitHub repository at https://github.com/OpenObservability/OpenMetrics/issues, which can be used to report security issues, incidents, or vulnerabilities pertaining to both external and internal to the project. OpenMetrics also has a mailing list at https://groups.google.com/g/openmetrics where discussions regarding new updates, other project discussions, and developments are done regarding the project. Vulnerabilities and other issues can be reported in the project’s GitHub repository and they are either being resolved by the project maintainers or the contributors. However, there is no process or plan for 
+OpenMetrics has an issue reporting in place in their GitHub repository at https://github.com/OpenObservability/OpenMetrics/issues, which can be used to report security issues, incidents, or vulnerabilities pertaining to both external and internal to the project. OpenMetrics also has a mailing list at https://groups.google.com/g/openmetrics where discussions regarding new updates, other project discussions, and developments are done regarding the project. Vulnerabilities and other issues can be reported in the project’s GitHub repository and they are either being resolved by the project maintainers or the contributors. However, there is no process or plan for for security issues or vulnerabilities as OpenMetrics does not produce any running software. The "releases" of the project are a website and related documentation. 
 
 ## Appendix
 
