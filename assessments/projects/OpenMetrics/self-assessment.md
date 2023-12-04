@@ -35,7 +35,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | Software | https://github.com/OpenObservability/OpenMetrics |
 | Security Provider | No |
 | Languages | Go-89.1%, HTML-4.9%, Makefile-3.6%, Sass-1.7%, Python-0.3%, Dockerfile-0.3%, Ruby-0.1%  |
-| SBOM | No SBOM |
+| SBOM | No SBOM, OpenMetrics is a specification project only and has basically no software |
 | | |
 
 ### Security links
@@ -167,15 +167,15 @@ The OpenMetrics project has not been documented as meeting any security standard
 
 ## Secure development practices
 
-In regards to the development pipeline, a description of the testing and assessment proccesses that the software undergoes as it is developed and built is not available on the OpenMetrics GitHub page, however, there is an extensive list of testing scripts that are available which shows that the software has been tested in some form.   
+In regards to the development pipeline, there is a CircleCI pipline that validates the protocol buffer specification and the validity of markdown files. Contributors are also required to sign off commits with DCO. Additionally there is an extensive list of testing scripts that are available which shows that the software has been tested in some form.   
 
-In terms of communication, the project has not documented how team members communicate with each other, but they have available meetings notes on their Github and post updates on their Github to communicate with their users. In addition, they have stated in the past that they work on the project by consensus through bi-weekly VC meetings. The project also has a mailing list which you can sign up for to receive updates on the project. They have also listed their team members on their Github page which can allow users or prospective users to reach out to the team.
+In terms of communication, the project has not documented how team members communicate with each other, but they have available meetings notes on their Github and post updates on their Github to communicate with their users as well as a slack channel in the CNCF slack that allows users to ask questions about the OpenMetrics project. In addition, they have stated in the past that they work on the project by consensus through bi-weekly VC meetings. The project also has a mailing list which you can sign up for to receive updates on the project. They have also listed their team members on their Github page which can allow users or prospective users to reach out to the team.
 
 The OpenMetrics project integrates into the cloud native ecosystem by specifying today's de-facto standard for transmitting cloud-native metrics at scale, with support for both text representation and Protocol Buffers and brings it into an Internet Engineering Task Force (IETF) standard, however, this IETF draft has expired. Additionally, the OpenMetrics project has been adopted by Everquote, GitLab, Grafana Labs as well as SoundCloud.
 
 ## Security issue resolution
 
-OpenMetrics has an issue reporting in place in their GitHub repository at https://github.com/OpenObservability/OpenMetrics/issues, which can be used to report security issues, incidents, or vulnerabilities pertaining to both external and internal to the project. OpenMetrics also has a mailing list at https://groups.google.com/g/openmetrics where discussions regarding new updates, other project discussions, and developments are done regarding the project. Vulnerabilities and other issues can be reported in the project’s GitHub repository and they are either being resolved by the project maintainers or the contributors.
+OpenMetrics has an issue reporting in place in their GitHub repository at https://github.com/OpenObservability/OpenMetrics/issues, which can be used to report security issues, incidents, or vulnerabilities pertaining to both external and internal to the project. OpenMetrics also has a mailing list at https://groups.google.com/g/openmetrics where discussions regarding new updates, other project discussions, and developments are done regarding the project. Vulnerabilities and other issues can be reported in the project’s GitHub repository and they are either being resolved by the project maintainers or the contributors. However, there is no process or plan for 
 
 ## Appendix
 
