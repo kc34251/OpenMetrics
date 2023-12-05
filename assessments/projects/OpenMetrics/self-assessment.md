@@ -25,6 +25,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 * [Security functions and features](#security-functions-and-features)
 * [Project compliance](#project-compliance)
 * [Secure development practices](#secure-development-practices)
+  * [STRIDE Threat Modeling for OpenMetrics](#stride-threat-modeling-for-openmetrics)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
 * [Action Items](#action-items)
