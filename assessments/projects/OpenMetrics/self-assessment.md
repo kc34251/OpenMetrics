@@ -45,6 +45,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | Doc | url |
 | -- | -- |
 | Specifications file | https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md |
+| Security Considerations | https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md#security-considerations-security |
 | Default and optional configs | https://github.com/OpenObservability/OpenMetrics/blob/main/.editorconfig |
 
 ## Overview
