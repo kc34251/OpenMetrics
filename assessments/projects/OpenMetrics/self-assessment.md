@@ -163,8 +163,7 @@ Critically, this project did well at protecting the information by not publicizi
 
 ## Project compliance
 
-The OpenMetrics project has not been documented as meeting any security standards, however, the OpenMetrics project advises users to handle encryption and security outside of OpenMetrics and to use reverse proxies, firewalling, and/or ACLs where feasible.
-
+The OpenMetrics project has not been documented as meeting any security standards.OpenMetrics does not provide its own security to users as it is a standard for metrics that does not produce any running software. All security needs to be taken care of by its implememntors. The OpenMetrics project advises users to handle encryption and security and to use reverse proxies, firewalling, and/or ACLs where feasible. 
 ## Secure development practices
 
 In regards to the development pipeline, there is a CircleCI pipline that validates the protocol buffer specification and the validity of markdown files. Contributors are also required to sign off commits with DCO. Additionally there is an extensive list of testing scripts that are available which shows that the software has been tested in some form.   
