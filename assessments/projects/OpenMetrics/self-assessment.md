@@ -49,7 +49,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 ## Overview
 
-OpenMetrics is a specification built upon and carefully extending Prometheus exposition format in almost 100% backwards compatible ways. 
+OpenMetrics is a specification built upon and carefully extending Prometheus exposition format in almost 100% backwards compatible ways. OpenMetrics is a project that focuses on creating a standardized format for exposing metrics from systems, services, and applications. It aims to provide a consistent way to collect and exchange metrics data in a machine-readable format, making it easier for monitoring and observability tools to work with various systems.
 
 ### Background
 
