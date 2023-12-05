@@ -27,6 +27,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 * [Secure development practices](#secure-development-practices)
 * [Security issue resolution](#security-issue-resolution)
 * [Appendix](#appendix)
+* [Action Items](#action-items)
 
 ## Metadata
 
@@ -57,13 +58,13 @@ Prometheus is an open source software that provides monitoring and alerting func
 
 In Open Metrics, four different actors are introduced. To structure the information better, several metric types are also introduced to help the understanding.
 
-First, the Datatype is introduced and should be ensured when implementing under the open metrics environment. For example, the values, boolean, and many other data types that you can see in other languages should follow a certain included method, not based on your local requirements. Failing to follow this Data type requirement will result in having an exception that you are using an invalid datatype, which will ruin the compile process in transmitting.
+* First, the Datatype is introduced and should be ensured when implementing under the open metrics environment. For example, the values, boolean, and many other data types that you can see in other languages should follow a certain included method, not based on your local requirements. Failing to follow this Data type requirement will result in having an exception that you are using an invalid datatype, which will ruin the compile process in transmitting.
 
-Second, a text format is introduced as the second actor in order to maintain the running capacity and text normalizing. With the requirement, UTF-8 MUST be used. Byte order markers (BOMs) MUST NOT be used. Each structure, for example, the Escaping and Numbers, should also follow the Open Matrics requirement in order to ensure text normalization. There is also a text format requirement in using Metrics types and this should be ensured as well.
+* Second, a text format is introduced as the second actor in order to maintain the running capacity and text normalizing. With the requirement, UTF-8 MUST be used. Byte order markers (BOMs) MUST NOT be used. Each structure, for example, the Escaping and Numbers, should also follow the Open Matrics requirement in order to ensure text normalization. There is also a text format requirement in using Metrics types and this should be ensured as well.
 
-Third, the Protobuf format is also required as the third actors of this project. Protobuf messages MUST be encoded in binary and MUST have "application/openmetrics-protobuf; version=1.0.0" as their content type. All payloads MUST be a single binary-encoded MetricSet message, as defined by the OpenMetrics protobuf schema. The protobuf format MUST follow the proto3 version of the protocol buffer language. There is also a requirement for string usage and Timestamp usage under this section. A protobuf format Schema is given for the user to familiarize with these requirements in order to maintain the normalization of the protocol buffer.
+* Third, the Protobuf format is also required as the third actors of this project. Protobuf messages MUST be encoded in binary and MUST have "application/openmetrics-protobuf; version=1.0.0" as their content type. All payloads MUST be a single binary-encoded MetricSet message, as defined by the OpenMetrics protobuf schema. The protobuf format MUST follow the proto3 version of the protocol buffer language. There is also a requirement for string usage and Timestamp usage under this section. A protobuf format Schema is given for the user to familiarize with these requirements in order to maintain the normalization of the protocol buffer.
 
-Last, Security and other sections are introduced as fourth actors. In this section, user can have their own choice but need to ensure this section is designed outside the Open Metrics. Three different security suggestions are given, and user can choose their own way to implement the security checking, but should not included in the uploaded file to the Open Metrics.
+* Last, Security and other sections are introduced as fourth actors. In this section, user can have their own choice but need to ensure this section is designed outside the Open Metrics. Three different security suggestions are given, and user can choose their own way to implement the security checking, but should not included in the uploaded file to the Open Metrics.
 
 Failing to reach any part of these actors will not structurally ruin the other parts, but all together ensure a successful and complete Open Metrics project being uploaded to the open resources cloud-native database and library. 
 
@@ -79,17 +80,17 @@ The Datatype as one of the actors works as the basement of the entire structure,
 
 ### Goals
 
-OpenMetrics is built on Prometheus, aiming to normalize the resources for users with publishing detail restrictions in format. OpenMetrics is intended to provide telemetry for online systems. It runs over protocols which do not provide hard or soft real time guarantees, so it can not make any real time guarantees itself. Latency and jitter properties of OpenMetrics are as imprecise as the underlying network, operating systems, CPUs, and the like. It is sufficiently accurate for aggregations to be used as a basis for decision-making, but not to reflect individual events. Systems of all sizes should be supported, from applications that receive a few requests an hour up to monitoring bandwidth usage on a 400Gb network port. Aggregation and analysis of transmitted telemetry should be possible over arbitrary time periods. It is intended to transport snapshots of state at the time of data transmission at a regular cadence.
+* OpenMetrics is built on Prometheus, aiming to normalize the resources for users with publishing detail restrictions in format. OpenMetrics is intended to provide telemetry for online systems. It runs over protocols which do not provide hard or soft real time guarantees, so it can not make any real time guarantees itself. Latency and jitter properties of OpenMetrics are as imprecise as the underlying network, operating systems, CPUs, and the like. It is sufficiently accurate for aggregations to be used as a basis for decision-making, but not to reflect individual events. Systems of all sizes should be supported, from applications that receive a few requests an hour up to monitoring bandwidth usage on a 400Gb network port. Aggregation and analysis of transmitted telemetry should be possible over arbitrary time periods. It is intended to transport snapshots of state at the time of data transmission at a regular cadence.
 
-With regards to security, implementors MAY choose to offer authentication, authorization, and accounting; if they so choose, this SHOULD be handled outside of OpenMetrics. All exposer implementations SHOULD be able to secure their HTTP traffic with TLS 1.2 or later. If an exposer implementation does not support encryption, operators SHOULD use reverse proxies, firewalling, and/or ACLs where feasible. Metric exposition should be independent of production services exposed to end users; as such, having a /metrics endpoint on ports like TCP/80, TCP/443, TCP/8080, and TCP/8443 is generally discouraged for publicly exposed services using OpenMetrics.
+* With regards to security, implementors MAY choose to offer authentication, authorization, and accounting; if they so choose, this SHOULD be handled outside of OpenMetrics. All exposer implementations SHOULD be able to secure their HTTP traffic with TLS 1.2 or later. If an exposer implementation does not support encryption, operators SHOULD use reverse proxies, firewalling, and/or ACLs where feasible. Metric exposition should be independent of production services exposed to end users; as such, having a /metrics endpoint on ports like TCP/80, TCP/443, TCP/8080, and TCP/8443 is generally discouraged for publicly exposed services using OpenMetrics.
 
 ### Non-goals
 
-Security Considerations are not included in the Open Metrics and need to be implemented at the user end. Users could choose to handle the Security problem with help from authentication, authorization, and accounting, however, all these should be handled outside of the Open Metrics. How ingestors discover which exposers exist, and vice-versa, is out of scope and thus not defined in this standard.
+* Security Considerations are not included in the Open Metrics and need to be implemented at the user end. Users could choose to handle the Security problem with help from authentication, authorization, and accounting, however, all these should be handled outside of the Open Metrics. How ingestors discover which exposers exist, and vice-versa, is out of scope and thus not defined in this standard.
 
-Avoiding misusing of the Open Metrics from the user end is not a concern in this project as well. Moreover, this project is not designed to negotiate the conflict between the rule included here and the ABNF section. If there is a conflict, the user should check the ABNF sections as first priority and then follow the rest of the additional rules that Open Metrics designed. 
+* Avoiding misusing of the Open Metrics from the user end is not a concern in this project as well. Moreover, this project is not designed to negotiate the conflict between the rule included here and the ABNF section. If there is a conflict, the user should check the ABNF sections as first priority and then follow the rest of the additional rules that Open Metrics designed. 
 
-The use of Data type is assumed to be understood by the user, and the user has the obligation to follow the usage there. When using data type, players are required to read and follow the instructions on Open Matrics, and when including the Port Allocations, users are required to follow the structure with these rules published by Open Metrics. It is not Open Metrics’ goal to convert any type of user input into this format.
+* The use of Data type is assumed to be understood by the user, and the user has the obligation to follow the usage there. When using data type, players are required to read and follow the instructions on Open Matrics, and when including the Port Allocations, users are required to follow the structure with these rules published by Open Metrics. It is not Open Metrics’ goal to convert any type of user input into this format.
 
 
 ## Self-assessment use
@@ -150,31 +151,33 @@ Attack Options: Password theft by phishing, Password crashing by brute force, IP
 
 ## Security functions and features
 
-Users need to exclude the Security management outside the OpenMetrics, and exporters need to make decisions and develop their own way of designing the Security check.
+* Users need to exclude the Security management outside the OpenMetrics, and exporters need to make decisions and develop their own way of designing the Security check.
 
-For outside OpenMetrics Security, implementors MAY choose to offer authentication, authorization, and accounting; if they so choose, this SHOULD be handled outside of OpenMetrics.
+* For outside OpenMetrics Security, implementors MAY choose to offer authentication, authorization, and accounting; if they so choose, this SHOULD be handled outside of OpenMetrics.
 
-All exposer implementations SHOULD be able to secure their HTTP traffic with TLS 1.2 or later. If an exposer implementation does not support encryption, operators SHOULD use reverse proxies, firewalling, and/or ACLs where feasible.
+* All exposer implementations SHOULD be able to secure their HTTP traffic with TLS 1.2 or later. If an exposer implementation does not support encryption, operators SHOULD use reverse proxies, firewalling, and/or ACLs where feasible.
 
-Metric exposition should be independent of production services exposed to end users; as such, having a /metrics endpoint on ports like TCP/80, TCP/443, TCP/8080, and TCP/8443 is generally discouraged for publicly exposed services using OpenMetrics.
+* Metric exposition should be independent of production services exposed to end users; as such, having a /metrics endpoint on ports like TCP/80, TCP/443, TCP/8080, and TCP/8443 is generally discouraged for publicly exposed services using OpenMetrics.
 
-Critically, this project did well at protecting the information by not publicizing the security management resource they are using for user information and stored information. However, this also creates a lack of security on the other hand, since it is not open to the public, it is hard to frequently update their security protections.
+* Critically, this project did well at protecting the information by not publicizing the security management resource they are using for user information and stored information. However, this also creates a lack of security on the other hand, since it is not open to the public, it is hard to frequently update their security protections.
 
 
 ## Project compliance
 
 The OpenMetrics project has not been documented as meeting any security standards.OpenMetrics does not provide its own security to users as it is a standard for metrics that does not produce any running software. All security needs to be taken care of by its implememntors. The OpenMetrics project advises users to handle encryption and security and to use reverse proxies, firewalling, and/or ACLs where feasible. 
+
 ## Secure development practices
 
-In regards to the development pipeline, there is a CircleCI pipline that validates the protocol buffer specification and the validity of markdown files. Contributors are also required to sign off commits with DCO. Additionally there is an extensive list of testing scripts that are available which shows that the software has been tested in some form.   
+* In regards to the development pipeline, there is a CircleCI pipline that validates the protocol buffer specification and the validity of markdown files. Contributors are also required to sign off commits with DCO. Additionally there is an extensive list of testing scripts that are available which shows that the software has been tested in some form.   
 
-In terms of communication, the project has not documented how team members communicate with each other, but they have available meetings notes on their Github and post updates on their Github to communicate with their users as well as a slack channel in the CNCF slack that allows users to ask questions about the OpenMetrics project.  
+* In terms of communication, the project has not documented how team members communicate with each other, but they have available meetings notes on their Github and post updates on their Github to communicate with their users as well as a slack channel in the CNCF slack that allows users to ask questions about the OpenMetrics project.  
 To join the slack channel, you need to get an invite from the [CNCF Slack](https://communityinviter.com/apps/cloud-native/cncf). Then you need to navigate to the #openmetrics channel within the CNCF Slack.   
-In addition, they have stated in the past that they work on the project by consensus through bi-weekly VC meetings. The project also has a mailing list which you can sign up for to receive updates on the project.  
-To join the mailing list, you can join through this [link](https://groups.google.com/g/openmetrics).  
+In addition, they have stated in the past that they work on the project by consensus through bi-weekly VC meetings. The project also has a mailing list which you can sign up for to receive updates on the project.
+
+* To join the mailing list, you can join through this [link](https://groups.google.com/g/openmetrics).  
 They have also listed their team members on their Github page which can allow users or prospective users to reach out to the team.
 
-The OpenMetrics project integrates into the cloud native ecosystem by specifying today's de-facto standard for transmitting cloud-native metrics at scale, with support for both text representation and Protocol Buffers and brings it into an Internet Engineering Task Force (IETF) standard, however, this IETF draft has expired. Additionally, the OpenMetrics project has been adopted by Everquote, GitLab, Grafana Labs as well as SoundCloud.
+* The OpenMetrics project integrates into the cloud native ecosystem by specifying today's de-facto standard for transmitting cloud-native metrics at scale, with support for both text representation and Protocol Buffers and brings it into an Internet Engineering Task Force (IETF) standard, however, this IETF draft has expired. Additionally, the OpenMetrics project has been adopted by Everquote, GitLab, Grafana Labs as well as SoundCloud.
 
 ## Security issue resolution
 
