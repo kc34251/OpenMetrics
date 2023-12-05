@@ -43,7 +43,7 @@ Express Learning course provided by Linux Foundation Training & Certification:
 
 | Doc | url |
 | -- | -- |
-| Security file | https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md |
+| Specifications file | https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md |
 | Default and optional configs | https://github.com/OpenObservability/OpenMetrics/blob/main/.editorconfig |
 
 ## Overview
@@ -70,13 +70,11 @@ Failing to reach any part of these actors will not structurally ruin the other p
 
 ### Actions
 
-This project is developed on Prometheus and hence follows all the functionality there as a basic, but has additional tightened and cleaned format and structure.
+* This project is developed on Prometheus and hence follows all the functionality there as a basic, but has additional tightened and cleaned format and structure. As the goal of this project is to reach normalization of data, recourse, library, and protocol buffer for the cloud-native base, All four actors mentioned in the previous section should play their roles.
 
-As the goal of this project is to reach normalization of data, recourse, library, and protocol buffer for the cloud-native base, All four actors mentioned in the previous section should play their roles.
+* When a user uploads a file into Open Metrics, the text format should be checked. "exposition" is the top-level token of the ABNF, hence should be checked. Moreover, the other requirements mentioned in the Actors section should be checked for maintainability. Above the over-structural completion, the protobuf format should be ensured on top of that to ensure the functionality and normalization would work.
 
-When a user uploads a file into Open Metrics, the text format should be checked. "exposition" is the top-level token of the ABNF, hence should be checked. Moreover, the other requirements mentioned in the Actors section should be checked for maintainability. Above the over-structural completion, the protobuf format should be ensured on top of that to ensure the functionality and normalization would work.
-
-The Datatype as one of the actors works as the basement of the entire structure, where all the data should be stored in a certain format to check the normalization, regardless of the local language or requirement at different user’s end. Last, a security check should be done at the user's end in either authentication, authorization, or accounting check. There is no restriction on this field, hence OpenMetrics asked the user not to include this in the project, but outside the OpenMetrics. 
+* The Datatype as one of the actors works as the basement of the entire structure, where all the data should be stored in a certain format to check the normalization, regardless of the local language or requirement at different user’s end. Last, a security check should be done at the user's end in either authentication, authorization, or accounting check. There is no restriction on this field, hence OpenMetrics asked the user not to include this in the project, but outside the OpenMetrics. 
 
 ### Goals
 
