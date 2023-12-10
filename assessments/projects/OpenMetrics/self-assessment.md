@@ -9,8 +9,6 @@ For a detailed guide with step-by-step discussion and examples, check out the fr
 Express Learning course provided by Linux Foundation Training & Certification: 
 [Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
 
-# Self-assessment outline
-
 ## Table of contents
 
 * [Metadata](#metadata)
